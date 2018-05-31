@@ -11,6 +11,9 @@ export class ServerElementComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log("on init fired");
   }
-
+ ngOnChanges(){
+   console.log("on changes fired");
+ }
 }

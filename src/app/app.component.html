@@ -7,3 +7,15 @@
     </div>
   </div>
 </div>
+
+<app-game-control (numberGenerated)="incrementGameCounter($event)"></app-game-control>
+<hr>
+<label for="">Even Numbers</label>
+<div style="float:left">
+  <app-even [evenNumbers]="evenCounter"></app-even>
+</div>
+&nbsp;&nbsp;&nbsp;
+<label for="">Odd numbers</label>
+<div style="float:left">
+  <app-odd [oddNumbers]="oddCounter"></app-odd>
+</div>
